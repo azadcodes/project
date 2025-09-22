@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>project</title>
+   <link rel="stylesheet" href="stlyle1.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+</head>
+<body>
+ 
+  <div>
+    <nav class="navbar">
+      <img src="logo3.jpg"> 
+      <h1>APEX</h1>
+      <ul>
+        <li>Home</li>
+         <li>Analysis</li>
+      </ul></nav>
+    </div>
+
+    <div class="box">
+      <h1>Upload Your Sequencing Data</h1>
+      <p>Supported formats:FASTQ,or compressed formats (.gz, .zip)</p>
+
+
+      <div class="upload-box">
+      <i class="fa-solid fa-cloud-arrow-up"></i>
+        <p>Drag and drop your files here or click to browse</p>
+        <input type="file" id="fileInput" hidden>
+
+      </div>
+  
+
+      <div class="form-container">
+
+        <form>
+
+          <label for="sample">Sample Type:</label>
+          <select id="sample" name="sample">
+            <option value="Seawater">Seawater</option>
+              <option value="Sediment">Sediment</option>
+                <option value="Organism">Organism</option>
+          </select>
+
+           <label for="location">Collection Location:</label>
+           <input type="text" id="location" name="location" placeholder="Enter location">
+
+            <label for="depth">Depth (meters):</label>
+             <input type="number" id="depth" name="depth" placeholder="e.g. 2500">
+
+              <label for="metadata">Additional metadata:</label>
+               <textarea id="metadata" name="metadata" row="4" placeholder='{"temperature":2.4, "oxygen": 4.5, "salinity":12.8}'></textarea>
+
+
+                <button type="submit">Analyze Sequences</button>
+
+
+
+
+
+
+
+        </form>
+      </div>
+
+
+
+
+
+
+
+    </div>
+    
+
+   
+
+  
+
+         
+  
+</body>
+</html>
